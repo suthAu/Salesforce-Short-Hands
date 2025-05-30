@@ -121,9 +121,19 @@ global without sharing class Logger {
         
         List<String> permissionSets = getPermissionSets();
         
+        //logRecord.Permission_Set_Group__c = permissionSets.get(1);
+        //logRecord.Permission_Set__c		= permissionSets.get(0);
         logRecord.Permission_Set_Group__c = permissionSets.get(1);
         logRecord.Permission_Set__c		= permissionSets.get(0);
         return logRecord;
+    }
+    
+    public static void logAsync(){
+
+    }
+
+    public static void log(){
+        
     }
     
     global class ErrorLog {
